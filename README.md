@@ -117,7 +117,7 @@ Comparaison;
 
 <img width="1018" height="237" alt="image" src="https://github.com/user-attachments/assets/cbd2ab35-5c00-4aaf-a36d-39f56713bbe5" />
 
-Le modèle pré-entraîné (ResNet18) apprend plus vite et atteint une meilleure précision d’entraînement (75%), tandis que le modèle from scratch reste limité (53%).
+Le modèle  (ResNet18) apprend plus vite et atteint une meilleure précision d’entraînement (75%), tandis que le modèle from scratch reste limité (53%).
 Cependant, la faible accuracy de validation (25%) pour les deux expériences indique un manque de généralisation, dû à :
 
 un dataset trop petit (40 images),
@@ -126,4 +126,4 @@ un déséquilibre de classes,
 
 ou un surapprentissage (overfitting).
 
-Amélioration : les améliorations sont possibles à l’augmentation du volume de données et une meilleure régularisation.
+Amélioration : les améliorations sont possibles à partir de  l’augmentation du volume de données et une meilleure régularisation.
