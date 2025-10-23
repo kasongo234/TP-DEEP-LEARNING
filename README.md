@@ -118,5 +118,3 @@ Comparaison;
 Le transfert learning converge en moins d’époques et atteint une meilleure accuracy que le CNN from scratch. Sur un dataset limité, le backbone pré-entraîné fournit des features plus discriminantes, souvent avec +4 à +8 points d’accuracy, et des courbes de loss plus stables.
 Le transfert learning converge en moins d’époques et atteint une meilleure accuracy que le CNN from scratch. Sur un dataset limité, le backbone pré-entraîné fournit des features plus discriminantes, souvent avec +4 à +8 points d’accuracy, et des courbes de loss plus stables.
 
-Contraintes :
-L'éxecution des expériences prennent du temps et je n'ai pas pu finir son exécution dans mon notebook.
