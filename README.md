@@ -66,40 +66,38 @@ requirements.txt
 README.md
 
 Voici les commandes pour entraîner l'expérience A:
-python train.py --exp A \
-  --data_root data \
+ 1. Entraînement Expérience A (CNN from scratch)
+
+ 1. Entraînement Expérience A (CNN from scratch)
+
+%cd /content/project
+!python train.py --exp A \
+  --data_root /content/data \
   --epochs 20 \
-  --batch_size 32 \
-  --lr 1e-3 \
-  --optimizer adam \            
-  --scheduler step \            
-  --augment \                   
-  --dropout 0.5 \
-  --workers 0
-
-Voici les commandes pour entraîner l'expérience B:
-
-python train.py --exp B \
-  --data_root data \
-  --epochs 10 \
-  --batch_size 32 \
+  --batch_size 16 \
+  --img_size 224 \
   --lr 1e-3 \
   --optimizer adam \
   --scheduler step \
   --augment \
-  --pretrained                
+  --subset 1.0
 
-  Explication sur le code utilisé:
 
-1. subset 0.2 : n’utiliser que 20 % des images (tests rapides).
+#  2. Entraînement Expérience B (Transfer Learning ResNet18)
 
-2. fast_debug : 1 époque, petites images, etc. (vérification de pipeline).
+!python train.py --exp B \
+  --data_root /content/data \
+  --epochs 20 \
+  --batch_size 16 \
+  --img_size 224 \
+  --lr 1e-3 \
+  --optimizer adam \
+  --scheduler step \
+  --augment \
+  --pretrained \
+  --subset 1.0
 
-3. clip 1.0 : gradient clipping.
-
-4. patience 5 : early stopping sur val_loss.
-
-Voici les Sorties:
+résultat 
 
 runs/<run_name>/: loss.png, accuracy.png, precision_recall.png, confusion_val.png (+ confusion_test.png si data/test existe).
 
