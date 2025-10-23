@@ -113,6 +113,10 @@ pour afficher le tableau voici la commande ;
 python collect_results.py
 
 Comparaison;
+
+
+<img width="1018" height="237" alt="image" src="https://github.com/user-attachments/assets/cbd2ab35-5c00-4aaf-a36d-39f56713bbe5" />
+
 Le transfert learning converge en moins d’époques et atteint une meilleure accuracy que le CNN from scratch. Sur un dataset limité, le backbone pré-entraîné fournit des features plus discriminantes, souvent avec +4 à +8 points d’accuracy, et des courbes de loss plus stables.
 Le transfert learning converge en moins d’époques et atteint une meilleure accuracy que le CNN from scratch. Sur un dataset limité, le backbone pré-entraîné fournit des features plus discriminantes, souvent avec +4 à +8 points d’accuracy, et des courbes de loss plus stables.
 
